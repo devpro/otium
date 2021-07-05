@@ -8,4 +8,9 @@
     <ProjectGuid>{F2AEB462-D19B-4E61-AA2C-302C94F2A616}</ProjectGuid>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
 </Project>

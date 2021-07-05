@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>Otium.OmdbProvider</AssemblyName>
+    <RootNamespace>Otium.OmdbProvider</RootNamespace>
+    <ProjectGuid>{B0EF4F76-04FC-4846-BF9D-23A2EE349C9A}</ProjectGuid>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MovieComponent\MovieComponent.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Withywoods.Net.Http" Version="1.4.3" />
+  </ItemGroup>
+
+</Project>

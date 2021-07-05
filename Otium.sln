@@ -5,13 +5,28 @@ VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "src\ConsoleApp\ConsoleApp.csproj", "{F2AEB462-D19B-4E61-AA2C-302C94F2A616}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FED06F88-04B6-47BC-90BC-DE8C8273DB4D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Solution Items", "0 - Solution Items", "{FED06F88-04B6-47BC-90BC-DE8C8273DB4D}"
 	ProjectSection(SolutionItems) = preProject
 		.dockerignore = .dockerignore
 		.editorconfig = .editorconfig
 		.gitignore = .gitignore
+		Local.runsettings = Local.runsettings
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Infrastructure", "2 - Infrastructure", "{F74D61EA-8BBD-420E-8574-D99AD6CBEF6A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{52E853D1-A097-49AC-9FD1-4B590780BF72}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Application", "4 - Application", "{C656FD11-6949-4989-8655-B48CCDC077F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieComponent", "src\MovieComponent\MovieComponent.csproj", "{61BB73F1-E95D-4DE6-ACB9-4A1E3C7AE760}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Common", "1 - Common", "{DD9A19B9-C577-4C06-8934-39494367177A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OmdbProvider", "src\OmdbProvider\OmdbProvider.csproj", "{95E24905-837A-4E48-9208-633C4599E386}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OmdbProvider.IntegrationTests", "test\OmdbProvider.IntegrationTests\OmdbProvider.IntegrationTests.csproj", "{9323FDBC-2AC8-48BA-A621-214634E69052}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,9 +38,27 @@ Global
 		{F2AEB462-D19B-4E61-AA2C-302C94F2A616}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2AEB462-D19B-4E61-AA2C-302C94F2A616}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2AEB462-D19B-4E61-AA2C-302C94F2A616}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61BB73F1-E95D-4DE6-ACB9-4A1E3C7AE760}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61BB73F1-E95D-4DE6-ACB9-4A1E3C7AE760}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61BB73F1-E95D-4DE6-ACB9-4A1E3C7AE760}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61BB73F1-E95D-4DE6-ACB9-4A1E3C7AE760}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95E24905-837A-4E48-9208-633C4599E386}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95E24905-837A-4E48-9208-633C4599E386}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95E24905-837A-4E48-9208-633C4599E386}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95E24905-837A-4E48-9208-633C4599E386}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9323FDBC-2AC8-48BA-A621-214634E69052}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9323FDBC-2AC8-48BA-A621-214634E69052}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9323FDBC-2AC8-48BA-A621-214634E69052}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9323FDBC-2AC8-48BA-A621-214634E69052}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F2AEB462-D19B-4E61-AA2C-302C94F2A616} = {C656FD11-6949-4989-8655-B48CCDC077F0}
+		{61BB73F1-E95D-4DE6-ACB9-4A1E3C7AE760} = {52E853D1-A097-49AC-9FD1-4B590780BF72}
+		{95E24905-837A-4E48-9208-633C4599E386} = {F74D61EA-8BBD-420E-8574-D99AD6CBEF6A}
+		{9323FDBC-2AC8-48BA-A621-214634E69052} = {F74D61EA-8BBD-420E-8574-D99AD6CBEF6A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {31B1F081-EC22-4F39-A8EF-50BF7F36F495}
