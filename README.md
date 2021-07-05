@@ -1,2 +1,3 @@
-# otium
-Libraries and tools to organize entertainment activities
+# Otium
+
+Libraries and tools to organize entertainment activities.

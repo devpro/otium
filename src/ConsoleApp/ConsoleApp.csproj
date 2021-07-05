@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>Otium.ConsoleApp</AssemblyName>
+    <RootNamespace>Otium.ConsoleApp</RootNamespace>
+    <ProjectGuid>{F2AEB462-D19B-4E61-AA2C-302C94F2A616}</ProjectGuid>
+  </PropertyGroup>
+
+</Project>
