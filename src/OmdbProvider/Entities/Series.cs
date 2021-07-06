@@ -2,7 +2,7 @@
 
 namespace Otium.OmdbProvider.Entities
 {
-    public class Movie : EntityBase
+    public class Series : EntityBase
     {
         public string Runtime { get; set; }
         public string Genre { get; set; }
@@ -15,10 +15,7 @@ namespace Otium.OmdbProvider.Entities
         public string Awards { get; set; }
         public string Poster { get; set; }
         public string Type { get; set; }
-        public string DVD { get; set; }
-        public string BoxOffice { get; set; }
-        public string Production { get; set; }
-        public string Website { get; set; }
+        public string TotalSeasons { get; set; }
         public string Response { get; set; }
     }
 }

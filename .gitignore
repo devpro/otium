@@ -351,3 +351,5 @@ MigrationBackup/
 
 # Local debug files
 Local.runsettings
+src/ConsoleApp/appsettings.json
+src/ConsoleApp/Properties/launchSettings.json

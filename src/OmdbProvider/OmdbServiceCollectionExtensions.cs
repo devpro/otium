@@ -13,7 +13,7 @@ namespace Otium.OmdbProvider
         /// <typeparam name="T">Instance of <see cref="IOmdbConfiguration"/></typeparam>
         /// <param name="services">Collection of services that will be completed</param>
         /// <returns></returns>
-        public static IServiceCollection AddOmdbClient<T>(this IServiceCollection services, T configuration)
+        public static IServiceCollection AddOmdbProvider<T>(this IServiceCollection services, T configuration)
             where T : class, IOmdbConfiguration
         {
             if (configuration == null)
@@ -22,7 +22,7 @@ namespace Otium.OmdbProvider
             }
 
             services.TryAddSingleton<IOmdbConfiguration>(configuration);
-            services.TryAddTransient<IOmdbHttpClient, OmdbHttpClient>();
+            services.TryAddTransient<OmdbHttpClient>();
             services.TryAddTransient<MovieComponent.IMovieProvider, OmdbMovieProvider>();
 
             services
